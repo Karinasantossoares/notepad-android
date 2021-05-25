@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentoLogin">
+
+    <fragment
+        android:id="@+id/fragmentoLogin"
+        tools:layout="@layout/fragment_login"
+        android:name="com.example.register_android.ui.fragment.LoginFragment">
+        <action
+            android:id="@+id/action_fragmentHome_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_out_right"
+            app:popExitAnim="@android:anim/slide_out_right"
+           />
+        <action
+            android:id="@+id/action_fragmentoLogin_to_notePadActivity"
+            app:destination="@id/notePadActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        tools:layout="@layout/fragment_register"
+        android:name="com.example.register_android.ui.fragment.RegisterFragment"
+        android:label="RegisterFragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_notePadActivity"
+            app:destination="@id/notePadActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/notePadActivity"
+        android:name="com.example.register_android.ui.activity.NotePadActivity"
+        android:label="activity_note_pad"
+        tools:layout="@layout/activity_note_pad" />
+</navigation>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">register-android</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_read_qrCode">Ler qrCode</string>
+    <string name="text_welcome">Bem vindo</string>
+    <string name="text_login">LOGIN</string>
+    <string name="text_register">Ainda não tem uma conta? \nRegistre-se aqui</string>
+    <string name="text_register_title">Registre-se</string>
+    <string name="text_type_password">Senha</string>
+    <string name="text_user">Usuário</string>
+    <string name="text_name">Nome</string>
+    <string name="text_email">Email</string>
+    <string name="text_add_new_notpad">Adicionar nota</string>
+    <string name="text_title">Título:</string>
+    <string name="text_description">Descrição:</string>
+    <string name="text_read_more">Ver mais</string>
+    <string name="text_save">Salvar</string>
+</resources>

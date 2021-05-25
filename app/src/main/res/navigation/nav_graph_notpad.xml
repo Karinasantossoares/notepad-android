@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_notpad"
+    app:startDestination="@id/notePadFragment">
+
+    <fragment
+        android:id="@+id/notePadFragment"
+        android:name="com.example.register_android.ui.fragment.NotePadFragment"
+        tools:layout="@layout/fragment_notpad">
+
+        <action
+            android:id="@+id/action_notePadFragment_to_authenticationActivity2"
+            app:destination="@id/authenticationActivity2"
+            app:popUpTo="@id/authenticationActivity2"
+            app:popUpToInclusive="true"/>
+
+        <action
+            android:id="@+id/action_notePadFragment_to_bottom_sheat_dialog"
+            app:destination="@id/bottom_sheat_dialog"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <dialog
+        android:id="@+id/bottom_sheat_dialog"
+        android:name="com.example.register_android.ui.component.NotepadBottomDialogFragment"
+        tools:layout="@layout/bottom_dialog_notepad"/>
+
+    <activity
+        android:id="@+id/authenticationActivity2"
+        android:name="com.example.register_android.ui.activity.AuthenticationActivity"
+        android:label="AuthenticationActivity" />
+
+</navigation>
