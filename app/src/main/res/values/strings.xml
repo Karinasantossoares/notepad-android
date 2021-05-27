@@ -16,4 +16,6 @@
     <string name="text_description">Descrição:</string>
     <string name="text_read_more">Ver mais</string>
     <string name="text_save">Salvar</string>
+    <string name="choose_color">Escolher cor</string>
+    <string name="text_attachment">Anexos</string>
 </resources>

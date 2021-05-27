@@ -31,6 +31,9 @@ class NotePadFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.btnNewNotepad.setOnClickListener {
+            findNavController().navigate(R.id.action_notePadFragment_to_newNotePadFragment)
+        }
 
         viewModel.stateListNotePad.observe(viewLifecycleOwner, Observer {
             val listNotePadAdapter = NotepadAdapter(

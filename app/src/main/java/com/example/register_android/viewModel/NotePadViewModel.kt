@@ -19,6 +19,10 @@ class NotePadViewModel(
     val shareText: LiveData<String>
         get() = _shareText
 
+    private val _imageAttchamentNotePad = MutableLiveData<List<String>>()
+    val imageAttchamentNotePad: LiveData<List<String>>
+        get() = _imageAttchamentNotePad
+
     init {
         getLitsNotePad()
     }
@@ -36,5 +40,9 @@ class NotePadViewModel(
         _shareText.value = notepad.let {
             it.title+"\n\n"+it.description
         }
+    }
+
+    fun uploadAttachmentImages(){
+
     }
 }

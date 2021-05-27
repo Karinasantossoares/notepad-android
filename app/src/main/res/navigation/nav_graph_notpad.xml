@@ -20,6 +20,9 @@
             android:id="@+id/action_notePadFragment_to_bottom_sheat_dialog"
             app:destination="@id/bottom_sheat_dialog"
             app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_notePadFragment_to_newNotePadFragment"
+            app:destination="@id/newNotePadFragment" />
     </fragment>
 
     <dialog
@@ -29,7 +32,13 @@
 
     <activity
         android:id="@+id/authenticationActivity2"
+        tools:layout="@layout/activity_authentication"
         android:name="com.example.register_android.ui.activity.AuthenticationActivity"
         android:label="AuthenticationActivity" />
+    <fragment
+        android:id="@+id/newNotePadFragment"
+        tools:layout="@layout/fragment_new_note_pad"
+        android:name="com.example.register_android.ui.fragment.NewNotePadFragment"
+        android:label="NewNotePadFragment" />
 
 </navigation>
